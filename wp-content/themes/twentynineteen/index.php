@@ -15,7 +15,24 @@
  */
 
 get_header();
+// $wpdb->insert(
+// 		$wpdb->prefix.'wp_posts',
+// 		array(
+// 			'post_title'=> 'YEYEYEYE',
+// 			'post_content'=> 'JYUIBYGUIYGGYGIGUY FOUFOUF'
+
+// 		)
+
+// )
+
+$wpdb->insert('wp_posts', array(
+    'post_title'=> 'YEYEYEYE',
+	'post_content'=> 'JYUIBYGUIYGGYGIGUY FOUFOUF'
+));
 ?>
+
+
+
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
