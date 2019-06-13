@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Classcode\CustomPost;
+namespace TaskManager\CustomPost;
 
 
 class TaskPostType

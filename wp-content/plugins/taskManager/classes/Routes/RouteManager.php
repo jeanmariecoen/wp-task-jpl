@@ -1,6 +1,6 @@
 <?php
 
-namespace Uber\Routes;
+namespace TaskManager\Routes;
 
 class RouteManager
 {

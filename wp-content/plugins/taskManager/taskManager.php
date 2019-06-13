@@ -9,9 +9,12 @@ Author URI:
 License: GPLv2 or later
 Text Domain: 
 */
+
+namespace TaskManager;
+
 require  __DIR__ . '/vendor/autoload.php';
 
-use CustomPostType\Tasks;
+use classes\CustomPost\Tasks;
 use Data\Datatable;
 use Routes\RouteManager;
 
