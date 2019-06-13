@@ -32,11 +32,11 @@ class Ubermanager
   }
 }
 
-Créer une classe Tasks (post_type)
+// Créer une classe Tasks (post_type)
 // reprendre code classique pour créer un custom_post_type
 // mettre 'uber' comme slug pour les langues (pour + tard, quand on devra localiser sur le marché de l'emploi)
 
-Créer une classe Datatable
+// Créer une classe Datatable
 // Qu'est-ce que j'enregistre, et où ?
 // - date de création
 // - date de modification
@@ -46,7 +46,7 @@ Créer une classe Datatable
 // Parce que la programmation, c'est d'abord un job d'observation: lire le code qui existe déjà.
 //  2e étape: créer mon initialisation pour les données, donc créer ma table.
 
-Créer une classe Routes
+// Créer une classe Routes
 // J'ai 4 routes. Dois-je créer un manager pour ça ? Oui: penser à plus tard, que peut-être oin va en ajouter d'autres.
 // les routes à créer: user, tasks, comments
 // en lien avec l'API de WordPress
@@ -68,7 +68,7 @@ class RouteManager
   }
 }
 
-Je crée maintenant la Façade.
+// Je crée maintenant la Façade.
 class TaskRoutes
 {
   public function __construct()
@@ -78,12 +78,13 @@ class TaskRoutes
   
   public function create_task_routes()
   {
-    register_rest_route(namespace 'ubermanager/v0', route '/tasks/(?P<id>\d+)', array(
+    register_rest_route( 'myplugin/v1', '/author/(?P<id>\d+)',
+    register_rest_route('ubermanager/v0', '/tasks/(?P<id>\d+)', array(
       'methods' => 'POST',
       'callback' => [$this, 'create_task']
     ));
 
-    register_rest_route(namespace 'ubermanager/v0', route '/tasks/(?P<id>\d+)', array(
+    register_rest_route('ubermanager/v0', '/tasks/(?P<id>\d+)', array(
       'methods' => 'GET',
       'callback' => [$this, 'get_all_tasks']
     ));
@@ -98,7 +99,7 @@ class TaskRoutes
       'post_per_page' => ''
     );
     $query = new \WP_Query( $args );
-    return rest_ensure_response()
+    return rest_ensure_response();
   }
 
   public function get_task_with_id()
@@ -109,7 +110,7 @@ class TaskRoutes
       'post_per_page' => ''
     );
     $query = new \WP_Query( $args );
-    return rest_ensure_response()
+    return rest_ensure_response();
   }
 
   public function create_task()

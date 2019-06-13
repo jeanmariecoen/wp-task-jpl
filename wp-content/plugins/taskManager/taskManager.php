@@ -14,7 +14,7 @@ namespace TaskManager;
 
 require  __DIR__ . '/vendor/autoload.php';
 
-use classes\CustomPost\Tasks;
+use classes\CustomPost\TaskPostType;
 use Data\Datatable;
 use Routes\RouteManager;
 
@@ -31,7 +31,7 @@ class TaskManager {
 
   public function init()
   {
-    new Tasks();
+    new TaskPostType();
     new RouteManager();
   }
 
