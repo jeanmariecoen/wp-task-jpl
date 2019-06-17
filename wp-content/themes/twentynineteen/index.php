@@ -16,39 +16,36 @@
 
 get_header();
 
-
-
-if (isset($_POST["titre_tache"])) {
+if (isset($_POST["titre_tache"])) 
+{
 	$titre=$_POST["titre_tache"];
 	$desc=$_POST["description_tache"];
 	
-
-
 	$resultat = $wpdb->insert('wp_posts', array(
-	'post_title'=> $titre,
-	'post_type'=> 'tache',
-	'post_content'=> $desc
-));
+		'post_title'=> $titre,
+		'post_type'=> 'task',
+		'post_content'=> $desc
+	));
 
 
-// SELECT MAX(column_name)
-// FROM table_name
-// WHERE condition;
+	// SELECT MAX(column_name)
+	// FROM table_name
+	// WHERE condition;
 
-// $dernier_post = $wpdb->get_var( "SELECT MAX(ID) FROM $wpdb->wp_posts" );
+	// $dernier_post = $wpdb->get_var( "SELECT MAX(ID) FROM $wpdb->wp_posts" );
 
-$table_name = $wpdb->prefix . "posts";
-$last_post = $wpdb->get_results("SELECT MAX(ID) as max_id FROM $table_name");
+	$table_name = $wpdb->prefix . "posts";
+	$last_post = $wpdb->get_results("SELECT MAX(ID) as max_id FROM $table_name");
 
-$last_post2= $last_post[0]->max_id;
-// $wpdb->get_results('wp_posts', array(
-//     'post_id'=> $titre,
-// 	'post_content'=> $desc
-// ));
+	$last_post2= $last_post[0]->max_id;
+	// $wpdb->get_results('wp_posts', array(
+	//     'post_id'=> $titre,
+	// 	'post_content'=> $desc
+	// ));
 
-$wpdb->insert('wp_tp_tasks', array(
-    'post_id'=> $last_post2
-));
+	$wpdb->insert('wp_tp_tasks', array(
+			'post_id'=> $last_post2
+	));
 }
 ?>
 

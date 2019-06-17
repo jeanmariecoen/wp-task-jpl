@@ -17,15 +17,15 @@ class TaskRoutes
 
     public function create_task_routes()
     {
-        register_rest_route('ubermanager/v0', '/tasks/(?P<id>\d+)', array(
+        register_rest_route('taskManager/v0', '/task/(?P<id>\d+)', array(
             'methods' => 'GET',
             'callback' => [$this,"get_task_with_id"],
         ));
-        register_rest_route('ubermanager/v0', '/tasks', array(
+        register_rest_route('taskManager/v0', '/task', array(
             'methods' => 'GET',
             'callback' => [$this,"get_all_tasks"],
         ));
-        register_rest_route('ubermanager/v0', '/tasks', array(
+        register_rest_route('taskManager/v0', '/task', array(
             'methods' => 'POST',
             'callback' => [$this,"create_task"],
         ));
@@ -34,7 +34,7 @@ class TaskRoutes
     public function get_all_tasks()
     {
         $args = array(
-            'post_type'	 => 'ubertasks',
+            'post_type'	 => 'task',
             'post_status'	 => 'publish',
             'posts_per_page' => -1
         );
@@ -48,7 +48,7 @@ class TaskRoutes
          * Todo: get the id for the task and return the given task
          */
         $args = array(
-            'post_type'	 => 'ubertasks',
+            'post_type'	 => 'task',
             'post_status'	 => 'publish',
             'posts_per_page' => -1
         );
