@@ -25,7 +25,8 @@ if (isset($_POST["titre_tache"])) {
 
 
 	$resultat = $wpdb->insert('wp_posts', array(
-    'post_title'=> $titre,
+	'post_title'=> $titre,
+	'post_type'=> 'tache',
 	'post_content'=> $desc
 ));
 

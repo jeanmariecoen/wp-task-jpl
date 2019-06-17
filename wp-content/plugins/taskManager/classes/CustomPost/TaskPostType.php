@@ -39,6 +39,6 @@ class TaskPostType
 
         );
 
-        register_post_type( 'fictional', $args );
+        register_post_type( 'tache', $args );
     }
 }
