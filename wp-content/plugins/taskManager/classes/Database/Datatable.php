@@ -41,13 +41,13 @@ class Datatable
 
 $sql = "CREATE TABLE $table_name (
   ID bigint(20) NOT NULL auto_increment,
-           post_id bigint(20) default NULL,
-           proprietary_user_id bigint(20) default NULL,
+            post_id bigint(20) default NULL,
+            proprietary_user_id bigint(20) default NULL,
             assigned_user_id bigint(20) default NULL,
-             task_status varchar(255),
+            task_status varchar(255),
             PRIMARY KEY  (`ID`),
-           FOREIGN KEY (`post_id`) REFERENCES wp_posts(`ID`),
-             FOREIGN KEY (`proprietary_user_id`) REFERENCES wp_users(`ID`),
+            FOREIGN KEY (`post_id`) REFERENCES wp_posts(`ID`),
+            FOREIGN KEY (`proprietary_user_id`) REFERENCES wp_users(`ID`),
             FOREIGN KEY (`assigned_user_id`) REFERENCES wp_users(`ID`)
 ) $charset_collate;";
 

@@ -15,6 +15,28 @@
  */
 
 get_header();
+
+if (isset($_POST["titre_tache"])) {
+	$titre=$_POST["titre_tache"];
+	$desc=$_POST["description_tache"];
+	$wpdb->insert('wp_posts', array(
+    'post_title'=> $titre,
+	'post_content'=> $desc
+));
+}
+?>
+
+<form action="index.php" method="POST">
+  Nouvelle tâche :<br>
+  <input type="text" name="titre_tache"><br>
+  Description :<br>
+  <input type="text" name="description_tache">
+  <input type="submit">
+</form>
+
+<?php 
+
+
 // $wpdb->insert(
 // 		$wpdb->prefix.'wp_posts',
 // 		array(
