@@ -39,6 +39,7 @@ class TaskPostType
 
         );
 
-        register_post_type( 'task', $args );
+
+        register_post_type( 'tache', $args );
     }
 }
