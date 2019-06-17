@@ -25,10 +25,10 @@ get_header();
 
 // )
 
-$wpdb->insert('wp_posts', array(
-    'post_title'=> 'YEYEYEYE',
-	'post_content'=> 'JYUIBYGUIYGGYGIGUY FOUFOUF'
-));
+// $wpdb->insert('wp_posts', array(
+//     'post_title'=> 'YEYEYEYE',
+// 	'post_content'=> 'JYUIBYGUIYGGYGIGUY FOUFOUF'
+// ));
 ?>
 
 
