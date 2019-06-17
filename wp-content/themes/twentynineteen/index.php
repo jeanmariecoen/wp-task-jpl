@@ -19,12 +19,12 @@ get_header();
 if (isset($_POST["titre_tache"])) 
 {
 	$titre=$_POST["titre_tache"];
-	$desc=$_POST["description_tache"];
-	
+	$description=$_POST["description_tache"];
+
 	$resultat = $wpdb->insert('wp_posts', array(
 		'post_title'=> $titre,
 		'post_type'=> 'task',
-		'post_content'=> $desc
+		'post_content'=> $description
 	));
 
 

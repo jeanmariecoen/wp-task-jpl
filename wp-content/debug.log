@@ -986,3 +986,53 @@ Stack trace:
 [17-Jun-2019 19:21:07 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
 [17-Jun-2019 19:21:07 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
 >>>>>>> c35b5c0f40e43cc10f9effa29530c63a6a93aa65
+[17-Jun-2019 20:55:13 UTC] PHP Notice:  Undefined index: 00 in C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 20:55:13 UTC] PHP Stack trace:
+[17-Jun-2019 20:55:13 UTC] PHP   1. {main}() C:\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 20:55:13 UTC] PHP   2. require() C:\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 20:55:13 UTC] PHP   3. require_once() C:\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 20:55:13 UTC] PHP   4. include() C:\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 20:55:13 UTC] PHP   5. get_footer() C:\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:112
+[17-Jun-2019 20:55:13 UTC] PHP   6. locate_template() C:\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 20:55:13 UTC] PHP   7. load_template() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 20:55:13 UTC] PHP   8. require_once() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 20:55:13 UTC] PHP   9. get_template_part() C:\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 20:55:13 UTC] PHP  10. locate_template() C:\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 20:55:13 UTC] PHP  11. load_template() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 20:55:13 UTC] PHP  12. require() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 20:55:13 UTC] PHP  13. dynamic_sidebar() C:\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 20:55:13 UTC] PHP  14. WP_Widget_Archives->display_callback() C:\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 20:55:13 UTC] PHP  15. WP_Widget_Archives->widget() C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 20:55:13 UTC] PHP  16. wp_get_archives() C:\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:143
+[17-Jun-2019 20:55:13 UTC] PHP  17. WP_Locale->get_month() C:\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 20:55:25 UTC] Erreur de la base de données WordPress Table 'wp-task-jpl.wp_tp_tasks' doesn't exist pour la requête INSERT INTO `wp_tp_tasks` (`post_id`) VALUES (9) faite par require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/twentynineteen/index.php')
+[17-Jun-2019 20:55:25 UTC] PHP Notice:  Undefined index: 00 in C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 20:55:25 UTC] PHP Stack trace:
+[17-Jun-2019 20:55:25 UTC] PHP   1. {main}() C:\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 20:55:25 UTC] PHP   2. require() C:\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 20:55:25 UTC] PHP   3. require_once() C:\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 20:55:25 UTC] PHP   4. include() C:\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 20:55:25 UTC] PHP   5. get_footer() C:\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:112
+[17-Jun-2019 20:55:25 UTC] PHP   6. locate_template() C:\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 20:55:25 UTC] PHP   7. load_template() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 20:55:25 UTC] PHP   8. require_once() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 20:55:25 UTC] PHP   9. get_template_part() C:\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 20:55:25 UTC] PHP  10. locate_template() C:\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 20:55:25 UTC] PHP  11. load_template() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 20:55:25 UTC] PHP  12. require() C:\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 20:55:25 UTC] PHP  13. dynamic_sidebar() C:\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 20:55:25 UTC] PHP  14. WP_Widget_Archives->display_callback() C:\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 20:55:25 UTC] PHP  15. WP_Widget_Archives->widget() C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 20:55:25 UTC] PHP  16. wp_get_archives() C:\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:143
+[17-Jun-2019 20:55:25 UTC] PHP  17. WP_Locale->get_month() C:\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 20:56:34 UTC] Erreur de la base de données WordPress Cannot add foreign key constraint pour la requête CREATE TABLE wp_tp_tasks (
+  ID bigint(20) NOT NULL auto_increment,
+            post_id bigint(20) default NULL,
+            proprietary_user_id bigint(20) default NULL,
+            assigned_user_id bigint(20) default NULL,
+            task_status varchar(255),
+            PRIMARY KEY  (`ID`),
+            FOREIGN KEY (`post_id`) REFERENCES wp_posts(`ID`),
+            FOREIGN KEY (`proprietary_user_id`) REFERENCES wp_users(`ID`),
+            FOREIGN KEY (`assigned_user_id`) REFERENCES wp_users(`ID`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci faite par activate_plugin, do_action('activate_taskManager/taskManager.php'), WP_Hook->do_action, WP_Hook->apply_filters, TaskPostType\TaskManager->init_data, TaskManager\Database\Datatable->__construct, TaskManager\Database\Datatable->datatable_init, dbDelta

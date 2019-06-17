@@ -59,6 +59,8 @@ class TaskRoutes
     public function create_task( \WP_REST_Request $request )
     {
         $request->get_body();
+        vardump($request);
+    
         $args = [
             'post_title' => "Tarabuster les pommes de terres"
         ];
