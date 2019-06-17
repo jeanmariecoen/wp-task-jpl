@@ -1,8 +1,6 @@
 <?php
 
-
 namespace TaskManager\CustomPost;
-
 
 class TaskPostType
 {
@@ -16,7 +14,7 @@ class TaskPostType
         $labels = array(
             'name'                => _x( 'Tâches', 'Post Type General Name', 'task'),
             'singular_name'       => _x( 'Tâche', 'Post Type Singular Name', 'task'),
-            'menu_name'           => __( 'Fiction', 'task'),
+            'menu_name'           => __( 'Tâche', 'task'),
             'all_items'           => __( 'All Fiction', 'task'),
             'view_item'           => __( 'View all fiction', 'task'),
             'add_new_item'        => __( 'Add new fiction', 'task'),

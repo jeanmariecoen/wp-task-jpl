@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Uber\\' => array($baseDir . '/classes'),
+    'TaskManager\\' => array($baseDir . '/classes'),
 );

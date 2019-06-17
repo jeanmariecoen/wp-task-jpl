@@ -1,0 +1,7 @@
+[17-Jun-2019 15:54:27 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'TaskPostType\TaskManager' does not have a method 'init_data' in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-hook.php on line 286
+[17-Jun-2019 15:54:27 UTC] PHP Stack trace:
+[17-Jun-2019 15:54:27 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-admin\plugins.php:0
+[17-Jun-2019 15:54:27 UTC] PHP   2. activate_plugin() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-admin\plugins.php:44
+[17-Jun-2019 15:54:27 UTC] PHP   3. do_action() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-admin\includes\plugin.php:672
+[17-Jun-2019 15:54:27 UTC] PHP   4. WP_Hook->do_action() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\plugin.php:465
+[17-Jun-2019 15:54:27 UTC] PHP   5. WP_Hook->apply_filters() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-hook.php:310

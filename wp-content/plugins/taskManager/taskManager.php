@@ -10,13 +10,15 @@ License: GPLv2 or later
 Text Domain: 
 */
 
-namespace TaskManager;
+namespace TaskPostType;
+// namespace TaskPostType;
 
 require  __DIR__ . '/vendor/autoload.php';
+// include the Composer autoload file
 
-use classes\CustomPost\TaskPostType;
-use Data\Datatable;
-use Routes\RouteManager;
+use TaskManager\CustomPost\TaskPostType;
+use TaskManager\Database\Datatable;
+use TaskManager\Routes\RouteManager;
 
 class TaskManager {
     /**
@@ -36,7 +38,7 @@ class TaskManager {
   }
 
   // créer la table dans la base de données
-  public function initData()
+  public function init_data()
   {
     new Datatable();
   }
