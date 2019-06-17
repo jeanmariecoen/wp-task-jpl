@@ -771,3 +771,158 @@ Stack trace:
 [17-Jun-2019 18:26:56 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
 [17-Jun-2019 18:26:56 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
 [17-Jun-2019 18:26:56 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 18:42:19 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 18:42:19 UTC] PHP Stack trace:
+[17-Jun-2019 18:42:19 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 18:42:19 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 18:42:19 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 18:42:19 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 18:42:19 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\archive.php:56
+[17-Jun-2019 18:42:19 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 18:42:19 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:42:19 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 18:42:19 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 18:42:19 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 18:42:19 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:42:19 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 18:42:19 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 18:42:19 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 18:42:19 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 18:42:19 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 18:42:19 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 18:46:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_task() in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:24
+Stack trace:
+#0 C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php(78): include()
+#1 C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php(19): require_once('C:\\Users\\179568...')
+#2 C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php(17): require('C:\\Users\\179568...')
+#3 {main}
+  thrown in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php on line 24
+[17-Jun-2019 18:46:33 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 18:46:33 UTC] PHP Stack trace:
+[17-Jun-2019 18:46:33 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 18:46:33 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 18:46:33 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 18:46:33 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 18:46:33 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:114
+[17-Jun-2019 18:46:33 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 18:46:33 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:46:33 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 18:46:33 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 18:46:33 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 18:46:33 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:46:33 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 18:46:33 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 18:46:33 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 18:46:33 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 18:46:33 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 18:46:33 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 18:46:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_task() in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:24
+Stack trace:
+#0 C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php(78): include()
+#1 C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php(19): require_once('C:\\Users\\179568...')
+#2 C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php(17): require('C:\\Users\\179568...')
+#3 {main}
+  thrown in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php on line 24
+[17-Jun-2019 18:46:58 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 18:46:58 UTC] PHP Stack trace:
+[17-Jun-2019 18:46:58 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 18:46:58 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 18:46:58 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 18:46:58 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 18:46:58 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:114
+[17-Jun-2019 18:46:58 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 18:46:58 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:46:58 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 18:46:58 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 18:46:58 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 18:46:58 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:46:58 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 18:46:58 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 18:46:58 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 18:46:58 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 18:46:58 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 18:46:58 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 18:56:44 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY (`assigned_user_id`) REFERENCES wp_users(`ID`)' at line 1 pour la requête ALTER TABLE wp_tp_tasks ADD COLUMN FOREIGN KEY (`assigned_user_id`) REFERENCES wp_users(`ID`) faite par activate_plugin, do_action('activate_taskManager/taskManager.php'), WP_Hook->do_action, WP_Hook->apply_filters, TaskPostType\TaskManager->init_data, TaskManager\Database\Datatable->__construct, TaskManager\Database\Datatable->datatable_init, dbDelta
+[17-Jun-2019 18:59:11 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 18:59:11 UTC] PHP Stack trace:
+[17-Jun-2019 18:59:11 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 18:59:11 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 18:59:11 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 18:59:11 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 18:59:11 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:114
+[17-Jun-2019 18:59:11 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 18:59:11 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:59:11 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 18:59:11 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 18:59:11 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 18:59:11 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 18:59:11 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 18:59:11 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 18:59:11 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 18:59:11 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 18:59:11 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 18:59:11 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 19:03:14 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 19:03:14 UTC] PHP Stack trace:
+[17-Jun-2019 19:03:14 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 19:03:14 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 19:03:14 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 19:03:14 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 19:03:14 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:114
+[17-Jun-2019 19:03:14 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 19:03:14 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 19:03:14 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 19:03:14 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 19:03:14 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 19:03:14 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 19:03:14 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 19:03:14 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 19:03:14 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 19:03:14 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 19:03:14 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 19:03:14 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 19:03:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function create_task() in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:24
+Stack trace:
+#0 C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php(78): include()
+#1 C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php(19): require_once('C:\\Users\\179568...')
+#2 C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php(17): require('C:\\Users\\179568...')
+#3 {main}
+  thrown in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php on line 24
+[17-Jun-2019 19:03:48 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 19:03:48 UTC] PHP Stack trace:
+[17-Jun-2019 19:03:48 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 19:03:48 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 19:03:48 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 19:03:48 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 19:03:48 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:114
+[17-Jun-2019 19:03:48 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 19:03:48 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 19:03:48 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 19:03:48 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 19:03:48 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 19:03:48 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 19:03:48 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 19:03:48 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 19:03:48 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 19:03:48 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 19:03:48 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 19:03:48 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892
+[17-Jun-2019 19:03:54 UTC] PHP Notice:  Undefined index: 00 in C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-locale.php on line 307
+[17-Jun-2019 19:03:54 UTC] PHP Stack trace:
+[17-Jun-2019 19:03:54 UTC] PHP   1. {main}() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:0
+[17-Jun-2019 19:03:54 UTC] PHP   2. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\index.php:17
+[17-Jun-2019 19:03:54 UTC] PHP   3. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-blog-header.php:19
+[17-Jun-2019 19:03:54 UTC] PHP   4. include() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template-loader.php:78
+[17-Jun-2019 19:03:54 UTC] PHP   5. get_footer() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\index.php:114
+[17-Jun-2019 19:03:54 UTC] PHP   6. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:76
+[17-Jun-2019 19:03:54 UTC] PHP   7. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 19:03:54 UTC] PHP   8. require_once() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:722
+[17-Jun-2019 19:03:54 UTC] PHP   9. get_template_part() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\footer.php:19
+[17-Jun-2019 19:03:54 UTC] PHP  10. locate_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:168
+[17-Jun-2019 19:03:54 UTC] PHP  11. load_template() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:671
+[17-Jun-2019 19:03:54 UTC] PHP  12. require() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\template.php:724
+[17-Jun-2019 19:03:54 UTC] PHP  13. dynamic_sidebar() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-content\themes\twentynineteen\template-parts\footer\footer-widgets.php:17
+[17-Jun-2019 19:03:54 UTC] PHP  14. WP_Widget->display_callback() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets.php:770
+[17-Jun-2019 19:03:54 UTC] PHP  15. WP_Widget_Archives->widget() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\class-wp-widget.php:378
+[17-Jun-2019 19:03:54 UTC] PHP  16. wp_get_archives() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\widgets\class-wp-widget-archives.php:141
+[17-Jun-2019 19:03:54 UTC] PHP  17. WP_Locale->get_month() C:\Users\1795683\UwAmp\www\wp-task-jpl\wp-includes\general-template.php:1892

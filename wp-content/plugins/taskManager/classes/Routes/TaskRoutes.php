@@ -58,11 +58,15 @@ class TaskRoutes
 
     public function create_task( \WP_REST_Request $request )
     {
-        //$request->get_body();
+        $request->get_body();
         $args = [
             'post_title' => "Tarabuster les pommes de terres"
         ];
-        wp_insert_post( $args );
+        $post_id = wp_insert_post( $args );
+
+        $wpdb->insert('wp_tp_tasks', array(
+            'post_id'=> $post_id
+        ));
         return rest_ensure_response(json_encode($args));
     }
     

@@ -21,6 +21,9 @@ get_header();
 if (isset($_POST["titre_tache"])) {
 	$titre=$_POST["titre_tache"];
 	$desc=$_POST["description_tache"];
+	
+
+
 	$resultat = $wpdb->insert('wp_posts', array(
     'post_title'=> $titre,
 	'post_content'=> $desc
@@ -48,6 +51,7 @@ $wpdb->insert('wp_tp_tasks', array(
 }
 ?>
 
+
 <form action="index.php" method="POST">
   Nouvelle tâche :<br>
   <input type="text" name="titre_tache"><br>
@@ -55,6 +59,8 @@ $wpdb->insert('wp_tp_tasks', array(
   <input type="text" name="description_tache">
   <input type="submit">
 </form>
+
+
 
 <?php 
 
