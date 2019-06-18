@@ -15,72 +15,7 @@
  */
 
 get_header();
-
-if (isset($_POST["titre_tache"])) 
-{
-	$titre=$_POST["titre_tache"];
-	$description=$_POST["description_tache"];
-
-	$resultat = $wpdb->insert('wp_posts', array(
-		'post_title'=> $titre,
-		'post_type'=> 'task',
-		'post_content'=> $description
-	));
-
-
-	// SELECT MAX(column_name)
-	// FROM table_name
-	// WHERE condition;
-
-	// $dernier_post = $wpdb->get_var( "SELECT MAX(ID) FROM $wpdb->wp_posts" );
-
-	$table_name = $wpdb->prefix . "posts";
-	$last_post = $wpdb->get_results("SELECT MAX(ID) as max_id FROM $table_name");
-
-	$last_post2= $last_post[0]->max_id;
-	// $wpdb->get_results('wp_posts', array(
-	//     'post_id'=> $titre,
-	// 	'post_content'=> $desc
-	// ));
-
-	$wpdb->insert('wp_tp_tasks', array(
-			'post_id'=> $last_post2
-	));
-}
 ?>
-
-
-<form method="POST">
-  Nouvelle tâche :<br>
-  <input type="text" name="titre_tache"><br>
-  Description :<br>
-  <input type="text" name="description_tache">
-  <input type="submit">
-</form>
-
-
-
-<?php 
-
-
-// $wpdb->insert(
-// 		$wpdb->prefix.'wp_posts',
-// 		array(
-// 			'post_title'=> 'YEYEYEYE',
-// 			'post_content'=> 'JYUIBYGUIYGGYGIGUY FOUFOUF'
-
-// 		)
-
-// )
-
-// $wpdb->insert('wp_posts', array(
-//     'post_title'=> 'YEYEYEYE',
-// 	'post_content'=> 'JYUIBYGUIYGGYGIGUY FOUFOUF'
-// ));
-?>
-
-
-
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
