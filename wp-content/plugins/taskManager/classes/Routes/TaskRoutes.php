@@ -50,8 +50,10 @@ class TaskRoutes
         $args = array(
             'post_type'	 => 'task',
             'post_status'	 => 'publish',
-            'posts_per_page' => -1
+            'posts_per_page' => -1,
+            'post_date' => current_time()
         );
+        var_dump(current_time());
         $query = new \WP_Query( $args );
         return rest_ensure_response($query->posts);
     }
