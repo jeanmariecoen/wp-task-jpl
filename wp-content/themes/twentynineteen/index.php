@@ -50,7 +50,7 @@ if (isset($_POST["titre_tache"]))
 ?>
 
 
-<form action="index.php" method="POST">
+<form method="POST">
   Nouvelle tâche :<br>
   <input type="text" name="titre_tache"><br>
   Description :<br>
