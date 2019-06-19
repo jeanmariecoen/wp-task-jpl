@@ -41,23 +41,37 @@ class TaskRoutes
 
     public function create_task( \WP_REST_Request $request )
     {
-        $request->get_body();
-        $object_request = json_decode($request, true);
 
-        $title =  $object_request['post_title'];
-        $content =  $object_request['post_content'];
+        // $body_request = $request->get_body();
+        // $object_request = json_decode($request, false);
+        $array_request = $request->get_body();
+        $test = json_decode($array_request,true, 512);
+        print_r($test['post_title']);
+        die;
+        return $test;
+
+        
+        foreach($array_request as $object)    // Where $list is the list containing the objects
+        {
+            $title = $object->post_title;
+        }
+        // $title =  $array_request->post_title;
+        $content =  $array_request[0].post_content;
+
+        // $title =  $object_request[0]->post_title();
+        // $content =  $object_request[0]->post_content();
         
         $args = [
             'post_title' => $title,
             'post_content' => $content
         ];
-        return rest_ensure_response(json_encode($args));
 
         $post_id = wp_insert_post( $args );
 
         $wpdb->insert('wp_tp_tasks', array(
             'post_id'=> $post_id
         ));
+
     }
 
     public function get_all_tasks()
