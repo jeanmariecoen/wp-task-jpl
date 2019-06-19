@@ -30,28 +30,33 @@ class TaskRoutes
             'callback' => [$this,"get_all_tasks"],
         ));
         register_rest_route('taskManager/v0', '/task/(?P<id>\d+)', array(
-            'methods' => 'PUT',
+            'methods' => 'PATCH',
             'callback' => [$this,"update_task"],
         ));
         register_rest_route('taskManager/v0', '/task/(?P<id>\d+)', array(
-            'methods' => 'DESTROY',
+            'methods' => 'DELETE',
             'callback' => [$this,"delete_task"],
         ));
     }
 
     public function create_task( \WP_REST_Request $request )
     {
-        $request->get_body();
-        $title =  $request->get_params('post_title');
+        // $request->get_body();
+        $array_request = $request->get_json_params();
+
+        $title =  $array_request.post_title;
+        $content =  $array_request.post_content;
+        
         $args = [
-            'post_title' => $title
+            'post_title' => $title,
+            'post_content' => $content
         ];
         $post_id = wp_insert_post( $args );
 
         $wpdb->insert('wp_tp_tasks', array(
             'post_id'=> $post_id
         ));
-        return rest_ensure_response(json_encode($args));
+        return rest_ensure_response(json_encode("tout va bien"));
     }
 
     public function get_all_tasks()
