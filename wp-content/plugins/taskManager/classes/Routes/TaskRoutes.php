@@ -44,22 +44,11 @@ class TaskRoutes
 
         // $body_request = $request->get_body();
         // $object_request = json_decode($request, false);
-        $array_request = $request->get_body();
-        $test = json_decode($array_request,true, 512);
-        print_r($test['post_title']);
-        die;
-        return $test;
+        $body_request = $request->get_body();
+        $array_request = json_decode($body_request,true, 512);
 
-        
-        foreach($array_request as $object)    // Where $list is the list containing the objects
-        {
-            $title = $object->post_title;
-        }
-        // $title =  $array_request->post_title;
-        $content =  $array_request[0].post_content;
-
-        // $title =  $object_request[0]->post_title();
-        // $content =  $object_request[0]->post_content();
+            $title = $array_request['post_title'];
+            $content = $array_request['post_content'];
         
         $args = [
             'post_title' => $title,

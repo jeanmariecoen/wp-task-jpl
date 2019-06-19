@@ -2734,3 +2734,28 @@ Stack trace:
 [19-Jun-2019 19:10:49 UTC] PHP  11. WP_REST_Server->dispatch() C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api\class-wp-rest-server.php:329
 [19-Jun-2019 19:10:49 UTC] PHP  12. TaskManager\Routes\TaskRoutes->create_task() C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api\class-wp-rest-server.php:946
 [19-Jun-2019 19:10:49 UTC] PHP  13. json_decode() C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php:48
+[19-Jun-2019 19:33:33 UTC] PHP Notice:  Undefined variable: wpdb in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 60
+[19-Jun-2019 19:33:33 UTC] PHP Stack trace:
+[19-Jun-2019 19:33:33 UTC] PHP   1. {main}() C:\UwAmp\www\wp-task-jpl\index.php:0
+[19-Jun-2019 19:33:33 UTC] PHP   2. require() C:\UwAmp\www\wp-task-jpl\index.php:17
+[19-Jun-2019 19:33:33 UTC] PHP   3. wp() C:\UwAmp\www\wp-task-jpl\wp-blog-header.php:16
+[19-Jun-2019 19:33:33 UTC] PHP   4. WP->main() C:\UwAmp\www\wp-task-jpl\wp-includes\functions.php:1105
+[19-Jun-2019 19:33:33 UTC] PHP   5. WP->parse_request() C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp.php:737
+[19-Jun-2019 19:33:33 UTC] PHP   6. do_action_ref_array() C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp.php:387
+[19-Jun-2019 19:33:33 UTC] PHP   7. WP_Hook->do_action() C:\UwAmp\www\wp-task-jpl\wp-includes\plugin.php:531
+[19-Jun-2019 19:33:33 UTC] PHP   8. WP_Hook->apply_filters() C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-hook.php:310
+[19-Jun-2019 19:33:33 UTC] PHP   9. rest_api_loaded() C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-hook.php:286
+[19-Jun-2019 19:33:33 UTC] PHP  10. WP_REST_Server->serve_request() C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api.php:309
+[19-Jun-2019 19:33:33 UTC] PHP  11. WP_REST_Server->dispatch() C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api\class-wp-rest-server.php:329
+[19-Jun-2019 19:33:33 UTC] PHP  12. TaskManager\Routes\TaskRoutes->create_task() C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api\class-wp-rest-server.php:946
+[19-Jun-2019 19:33:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function insert() on null in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php:60
+Stack trace:
+#0 C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api\class-wp-rest-server.php(946): TaskManager\Routes\TaskRoutes->create_task(Object(WP_REST_Request))
+#1 C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api\class-wp-rest-server.php(329): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#2 C:\UwAmp\www\wp-task-jpl\wp-includes\rest-api.php(309): WP_REST_Server->serve_request('/taskManager/v0...')
+#3 C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-hook.php(286): rest_api_loaded(Object(WP))
+#4 C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5 C:\UwAmp\www\wp-task-jpl\wp-includes\plugin.php(531): WP_Hook->do_action(Array)
+#6 C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp.php(387): do_action_ref_array('parse_request', Array)
+#7 C:\UwAmp\www\wp-task-jpl\wp-includes\class-wp.php(737): WP->parse_request('')
+#8 C:\UwAmp\ww in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 60
