@@ -37,7 +37,12 @@ class TaskRoutes
             'methods' => 'DELETE',
             'callback' => [$this,"delete_task"],
         ));
-    }
+        register_rest_route('taskManager/v0', '/login', array(
+            'methods'  => 'POST',
+            'callback' => [$this,"login"],
+            )
+        ));
+       
 
     public function create_task( \WP_REST_Request $request )
     {
@@ -51,8 +56,36 @@ class TaskRoutes
             $content = $array_request['post_content'];
         
         $args = [
+            'post_status'       =>  'publish',
             'post_title' => $title,
-            'post_content' => $content
+            'post_content' => $content,
+            'post_type' => 'task'
+        ];
+
+        $post_id = wp_insert_post( $args );
+
+        $wpdb->insert('wp_tp_tasks', array(
+            'post_id'=> $post_id
+        ));
+
+    }
+
+    public function login( \WP_REST_Request $request )
+    {
+
+        // $body_request = $request->get_body();
+        // $object_request = json_decode($request, false);
+        $body_request = $request->get_body();
+        $array_request = json_decode($body_request,true, 512);
+
+            $title = $array_request['user'];
+            $content = $array_request['password'];
+        
+        $args = [
+            'post_status'       =>  'publish',
+            'post_title' => $title,
+            'post_content' => $content,
+            'post_type' => 'task'
         ];
 
         $post_id = wp_insert_post( $args );
@@ -71,6 +104,8 @@ class TaskRoutes
             'posts_per_page' => -1
         );
         $query = new \WP_Query( $args );
+
+      
         return rest_ensure_response($query->posts);
     }
 
@@ -88,5 +123,11 @@ class TaskRoutes
         $query = new \WP_Query( $args );
         return rest_ensure_response($query->posts);
     }
+
+
+// API custom endpoints for WP-REST API
+
+
+   
     
 }
