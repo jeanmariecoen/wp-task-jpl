@@ -37,11 +37,11 @@ class TaskRoutes
             'methods' => 'DELETE',
             'callback' => [$this,"delete_task"],
         ));
-        register_rest_route('taskManager/v0', '/login', array(
-            'methods'  => 'POST',
-            'callback' => [$this,"login"],
-            )
-        ));
+        // register_rest_route('taskManager/v0', '/login', array(
+        //     'methods'  => 'POST',
+        //     'callback' => [$this,"login"],
+        //     )
+        // ));
        
 
     public function create_task( \WP_REST_Request $request )
@@ -54,12 +54,14 @@ class TaskRoutes
 
             $title = $array_request['post_title'];
             $content = $array_request['post_content'];
+            // $author = $array_request['post_author'];
         
         $args = [
             'post_status'       =>  'publish',
             'post_title' => $title,
             'post_content' => $content,
-            'post_type' => 'task'
+            'post_type' => 'task',
+            // 'post_author' => $author,
         ];
 
         $post_id = wp_insert_post( $args );
@@ -70,31 +72,29 @@ class TaskRoutes
 
     }
 
-    public function login( \WP_REST_Request $request )
-    {
+    // public function login( \WP_REST_Request $request )
+    // {
 
-        // $body_request = $request->get_body();
-        // $object_request = json_decode($request, false);
-        $body_request = $request->get_body();
-        $array_request = json_decode($body_request,true, 512);
+    //     // $body_request = $request->get_body();
+    //     // $object_request = json_decode($request, false);
+    //     $body_request = $request->get_body();
+    //     $array_request = json_decode($body_request,true, 512);
 
-            $title = $array_request['user'];
-            $content = $array_request['password'];
+    //         $user = $array_request['user'];
+    //         $password = $array_request['password'];
         
-        $args = [
-            'post_status'       =>  'publish',
-            'post_title' => $title,
-            'post_content' => $content,
-            'post_type' => 'task'
-        ];
+    //     $args = [
+    //         'user_login' => $user,
+    //         'user_pass' => $password,
+    //     ];
 
-        $post_id = wp_insert_post( $args );
+    //     $post_id = wp_insert_post( $args );
 
-        $wpdb->insert('wp_tp_tasks', array(
-            'post_id'=> $post_id
-        ));
+    //     $wpdb->insert('wp_tp_tasks', array(
+    //         'post_id'=> $post_id
+    //     ));
 
-    }
+    // }
 
     public function get_all_tasks()
     {

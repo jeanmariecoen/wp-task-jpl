@@ -4095,3 +4095,39 @@ Stack trace:
 [20-Jun-2019 19:53:01 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ',' or ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 83
 [20-Jun-2019 19:53:01 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ',' or ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 83
 [20-Jun-2019 19:53:01 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ',' or ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 83
+[20-Jun-2019 20:43:05 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:07 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:11 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:18 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:32 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:55 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:58 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:43:59 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:44:02 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:45:46 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:45:49 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:46:30 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:46:33 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:46:37 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:47:40 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:47:43 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:48:14 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:48:17 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:50:07 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:50:10 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:50:44 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:50:47 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:53:30 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:31 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:35 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:35 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:35 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:36 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:36 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:54:36 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:55:59 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:56:04 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:57:00 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 44
+[20-Jun-2019 20:57:50 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 47
+[20-Jun-2019 20:58:17 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 47
+[20-Jun-2019 20:58:30 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in C:\UwAmp\www\wp-task-jpl\wp-content\plugins\taskManager\classes\Routes\TaskRoutes.php on line 47
