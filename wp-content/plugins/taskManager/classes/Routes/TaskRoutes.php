@@ -49,14 +49,12 @@ class TaskRoutes
 
             $title = $array_request['post_title'];
             $content = $array_request['post_content'];
-            $author = $array_request['post_author'];
         
         $args = [
             'post_status' => 'publish',
             'post_title' => $title,
             'post_type'	 => 'task',
             'post_content' => $content
-            // 'post_author' => $author
         ];
 
         $post_id = wp_insert_post( $args );
@@ -91,6 +89,30 @@ class TaskRoutes
         );
         $query = new \WP_Query( $args );
         return rest_ensure_response($query->posts);
+    }
+
+    public function delete_task( \WP_REST_Request $request )
+    {
+
+        // $body_request = $request->get_body();
+        // $object_request = json_decode($request, false);
+        $body_request = $request->get_body();
+        $array_request = json_decode($body_request,true, 512);
+
+            $title = $array_request['post_title'];
+            $content = $array_request['post_content'];
+        
+        $args = [
+            'post_status' => 'publish',
+            'post_title' => $title,
+            'post_type'	 => 'task',
+            'post_content' => $content
+        ];
+
+        $post_id = wp_delete_post($postid, $force_delete);
+
+      
+
     }
     
 }
