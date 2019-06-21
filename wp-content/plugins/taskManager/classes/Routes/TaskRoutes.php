@@ -49,10 +49,14 @@ class TaskRoutes
 
             $title = $array_request['post_title'];
             $content = $array_request['post_content'];
+            $author = $array_request['post_author'];
         
         $args = [
+            'post_status' => 'publish',
             'post_title' => $title,
+            'post_type'	 => 'task',
             'post_content' => $content
+            // 'post_author' => $author
         ];
 
         $post_id = wp_insert_post( $args );
