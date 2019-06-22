@@ -41,12 +41,8 @@ class TaskRoutes
 
     public function create_task( \WP_REST_Request $request )
     {
-
-        // $body_request = $request->get_body();
-        // $object_request = json_decode($request, false);
         $body_request = $request->get_body();
         $array_request = json_decode($body_request,true, 512);
-
             $title = $array_request['post_title'];
             $content = $array_request['post_content'];
         
@@ -59,10 +55,16 @@ class TaskRoutes
 
         $post_id = wp_insert_post( $args );
 
+        $args = array(
+            'ID' => $post_id
+        );
+        $query = new \WP_Query( $args );
+        return rest_ensure_response($query->posts);
+
+        // ceci ne fonctionne pas...
         $wpdb->insert('wp_tp_tasks', array(
             'post_id'=> $post_id
         ));
-
     }
 
     public function get_all_tasks()
@@ -82,7 +84,6 @@ class TaskRoutes
          * Todo: get the id for the task and return the given task
          */
         $args = array(
-            'post_type'	 => 'task',
             'post_status'	 => 'publish',
             'posts_per_page' => -1,
             'post_date' => current_time()
@@ -93,26 +94,12 @@ class TaskRoutes
 
     public function delete_task( \WP_REST_Request $request )
     {
-
-        // $body_request = $request->get_body();
-        // $object_request = json_decode($request, false);
         $body_request = $request->get_body();
         $array_request = json_decode($body_request,true, 512);
-
-            $title = $array_request['post_title'];
-            $content = $array_request['post_content'];
-        
-        $args = [
-            'post_status' => 'publish',
-            'post_title' => $title,
-            'post_type'	 => 'task',
-            'post_content' => $content
-        ];
-
-        $post_id = wp_delete_post($postid, $force_delete);
-
-      
-
+            $task_id = $array_request['task_id'];
+            
+        wp_delete_post($task_id, true);
+        return rest_ensure_response();
     }
     
 }
